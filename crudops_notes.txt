@@ -1,0 +1,25 @@
+CRUD: Create, read, update, delete
+
+
+
+Create:
+
+
+
+
+Read:
+
+
+
+
+Update:
+
+
+
+
+Delete:
+
+
+
+
+
