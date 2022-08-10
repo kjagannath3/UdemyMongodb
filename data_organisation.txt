@@ -1,0 +1,51 @@
+Understanding document Schemas and Data Types:
+
+MongoDB does NOT have to use Schemas.
+
+It is up to the user to determine the organisation of data
+
+this DOES NOT MEAN you can't use a schema, in fact, you should have a base level of structure!
+
+
+
+
+
+Structuring Documents:
+
+
+    Chaos: pure Mongodb unstructuredness!
+
+    SQL World: Complete structure: Schemas are immutible
+
+
+    Middle Ground: Some of the fields are constant, but other fields are generally flexible. This is generally what we want
+
+    Things to consider:
+        What type of data does my app need to generate?
+            User Info, product orders
+        where does my data need to be retrieved?
+            Homepage, storage, etc?
+
+        Which kind of information do I want to display?
+
+
+
+
+
+
+
+
+Modelling Relations:
+    References: Work just like pointers
+
+    One to One relations:
+        example: each patient has its own unique disease summary
+        much better to use embedded docs for this approach
+    
+    One to many relations:
+        example: one udemy thread could be mapped to many different answers
+
+
+    Many to Many:
+        Different customers can buy different products
+        Typically want to use References

@@ -1,0 +1,31 @@
+Different Data Types:
+
+
+Text:
+    Quotation marks depend on language used(default is javascript, so default does not matter)
+    Max limit - 16 mb, should be plenty
+
+Bool: true/false
+
+Numbers(default is double):
+    Declaring new number types(NumberInt(1))
+    int: int32
+    long: long64
+    floating point: double
+    NumberDecimal: High precision floating point
+
+ObjectId:
+    Present in every object, renders every document unique
+    Automatically generated, can be explicitely defined also
+    chronologically stored for sorting purposes
+
+date/time:
+    isoDate: isoDate("2018-09-09")
+    TimeStamp: TimeStamp(11421532)
+    when adding this field to a new doc, just say "new Date()" or "new Timpestamp()", and the date stamp will be generated
+
+EmbeddedDocument:
+    Can be nested up to 100
+
+Arrays:
+    Can hold any data type
