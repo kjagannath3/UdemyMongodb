@@ -1,0 +1,13 @@
+JSON:
+"Javascript Object Notation"
+human-readable 
+
+
+
+
+BSON:
+"Binary-Script object notation"
+Efficient to store
+easily reaable by for machines
+
+Allows us to not have keys in quotation marks, because mongodb can interpret into bson

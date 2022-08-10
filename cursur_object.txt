@@ -1,0 +1,5 @@
+Pagenates a response, allows us to cycle through very large results
+
+If you want to see all elements in docs, do db.find().toArray()
+
+forEach: allows us to iterate through all the responses and do what we want with each element in our own language

@@ -1,0 +1,11 @@
+filters are of type document, and we can use them to narrow down our crud operations to specific Documents
+
+example: db.flightData.deleteOne({_id: "yo wassup"}): deletes the document in the flightData collection with id "yo wassup"
+
+for deleteMany, we need to have similar fields
+
+To filter greater than, less than, use the keyword $gt, $lt
+
+e.g: b.flightData.deleteOne({distance: {$gt: 1000}}), deletes all flight documents with distance greater than 1000
+
+projection: find({}, {<field>: 1}): show only specific fields

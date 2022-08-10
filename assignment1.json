@@ -1,0 +1,34 @@
+[{
+        "name": "Keshav ",
+        "age": 22,
+        "history": [{
+                "disease": "covid",
+                "prescription": "vaccine"
+            },
+
+            {
+                "disease": "tuberculosis",
+                "perscription": "treatment"
+            }
+        ]
+    },
+    {
+        "name": "Max ",
+        "age": 39,
+        "history": [{
+            "disease": "covid",
+            "prescription": "vaccine"
+        }]
+    },
+    {
+        "name": "Rishi ",
+        "age": 20,
+        "history": [
+
+            {
+                "disease": "Invisible Lat Syndrome",
+                "perscription": "therapy"
+            }
+        ]
+    }
+] //db.hospital.insertMany(above doc)

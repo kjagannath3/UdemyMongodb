@@ -2,23 +2,77 @@ CRUD: Create, read, update, delete
 
 
 
+MONGODB organisation:
+-Server
+-databases
+-Collections
+-Documents
+
+Note: created implicitely when you start storing data(commands such as insertOne())
+
 Create:
+db.<dbname>.insertOne(<data>, <options>) insert one new document
+example: db.flightData.insertOne({
+    "departureAirport": "MUC",
+    "arrivalAirport": "SFO",
+    "aircraft": "Airbus A380",
+    "distance": 12000,
+    "intercontinental": true
+  }) // inserts the following document into the flightData db. If flightData does not exist, a db with name flightData will be implicitely created.
 
-
+insertMany()
 
 
 Read:
+db.flightData.find(<options>): lists all the data in a particilar db
+example: flights> db.flightData.find().pretty()
+examples of options: filters
+
+findOne()
+
+output:
+[
+  {
+    _id: ObjectId("62f2e64b7976bf5b3ee83499"),
+    departureAirport: 'MUC',
+    arrivalAirport: 'SFO',
+    aircraft: 'Airbus A380',
+    distance: 12000,
+    intercontinental: true
+  }
+]
+
+pretty(): makes the data pretty(duh), more useful for more complex queries
 
 
 
 
 Update:
+UpdateOne(filter, data, options)
+
+updateMany()
+
+For above two commands: use $set
+
+update():without $set, this command overwrites the entire document
 
 
 
 
 Delete:
+deleteOne(filter, options)
+deleteMany(filter, options)
 
+
+
+misc cmds:
+show dbs: lists all currently active databases
+use <dbname> switch to another database; can be done on databases that don't exist yet(thanks js!)
+
+
+
+
+Special note: for cmds involing many, if we want to select all docs in a collection, use "{}"
 
 
 

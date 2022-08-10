@@ -1,0 +1,1 @@
+db.patients.insertOne({name: "Keshav", age: 22, history: [{disease: "covid", treatment: "stay at home"}, {disease: "TB", treatment: "bruh"}])
